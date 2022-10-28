@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Earth - Wikipedia</title>
+    <link
+      rel="icon"
+      href="https://en.wikipedia.org/static/favicon/wikipedia.ico"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+      #body {
+        margin: 0;
+        font-size: 15px;
+      }
+      #layout {
+        display: flex;
+      }
+      #sidebar {
+        flex: 1;
+        background-color: #f6f6f6;
+      }
+
+      #main {
+        flex: 12;
+      }
+
+      #logo-png {
+        height: 160px;
+        width: 160px;
+        padding-left: 10px;
+      }
+
+      #menu {
+        margin-left: 20px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      #menu a {
+        text-decoration: none;
+        color: #0645ad;
+      }
+
+      #menu p {
+        border-bottom: 1px solid lightgray;
+      }
+
+      #account {
+        display: flex;
+        justify-content: flex-end;
+        text-align: center;
+        padding-right: 15px;
+        padding: 5px;
+        color: #54595d;
+      }
+
+      #account p {
+        margin: 0;
+      }
+      #account .user {
+        font-size: 15px;
+      }
+      #account a {
+        padding-left: 5px;
+        text-decoration: none;
+        color: #0645ad;
+      }
+
+      #navbar {
+        display: flex;
+        margin-top: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+
+      #navbar-left {
+        flex: 1;
+        display: flex;
+        border-bottom: 1px solid lightskyblue;
+      }
+      #navbar-right {
+        flex: 12;
+        display: flex;
+        justify-content: flex-end;
+        border-bottom: 1px solid lightskyblue;
+      }
+
+      #left-line {
+        border-left: 1px solid lightskyblue;
+      }
+      #navbar-left div,
+      #navbar-right div {
+        padding-right: 8px;
+        padding-left: 8px;
+        background-image: linear-gradient(
+          to top,
+          #77c1f6 0,
+          #e8f2f8 1px,
+          #ffffff 100%
+        );
+      }
+
+      #navbar-input {
+        width: 320px;
+        margin: 3px;
+      }
+
+      #details {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      #title {
+        display: flex;
+        font-size: 30px;
+        border-bottom: 1px solid gray;
+        margin-bottom: 10px;
+      }
+
+      #earth {
+        display: flex;
+        flex: 1;
+      }
+
+      #title-help {
+        flex: 12;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      #title-help img {
+        height: 20px;
+        width: 20px;
+      }
+
+      #tag-line {
+        padding-left: 30px;
+      }
+
+      #earth-details {
+        display: flex;
+      }
+
+      #earth-details-left {
+        flex: 8;
+        padding-right: 10px;
+      }
+      #earth-details-right {
+        flex: 2;
+      }
+
+      #earth-header {
+        display: flex;
+        padding-left: 30%;
+        font-weight: bold;
+      }
+      #earth-header img {
+        height: 24px;
+        width: 24px;
+        margin-top: 12px;
+      }
+
+      #earth-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        border: 1px solid #a2a9b1;
+        background-color: #f8f9fa;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      #earth-content img {
+        height: 220px;
+        width: 220px;
+        padding-left: 10%;
+      }
+
+      .link {
+        text-decoration: none;
+        color: #0645ad;
+      }
+
+      #etymology {
+      }
+      #e-title {
+        font-size: 30px;
+        border-bottom: 1px solid gray;
+        margin-bottom: 10px;
+      }
+
+      #e-details {
+      }
+    </style>
+  </head>
+  <body id="body">
+    <div id="layout">
+      <div id="sidebar">
+        <img
+          id="logo-png"
+          src="https://en.wikipedia.org/static/images/project-logos/enwiki-2x.png"
+        />
+        <div id="menu">
+          <a id="link" href="https://en.wikipedia.org/wikie">Main page</a>
+          <a href="">Contents</a>
+          <a href="">Current Events</a>
+          <a href="">Random Articles</a>
+          <a href="">About Wikipedia</a>
+          <a href="">Contact US</a>
+        </div>
+
+        <div id="menu">
+          <p>Contribure</p>
+          <a id="link" href="">Help</a>
+          <a href="">Learn to edit</a>
+          <a href="">Community portal</a>
+          <a href="">Recent changes</a>
+          <a href="">Upload file</a>
+        </div>
+
+        <div id="menu">
+          <p>Tools</p>
+          <a id="link" href="">What links here</a>
+          <a href="">Related changes</a>
+          <a href="">Special pages</a>
+          <a href="">Permanent link</a>
+          <a href="">Page information</a>
+          <a href="">Cite this page</a>
+          <a href="">Wikidata item</a>
+        </div>
+      </div>
+      <div id="main">
+        <div id="account">
+          <span class="material-icons user">person</span>
+          <p>Not logged in</p>
+          <a href="">Talk</a>
+          <a href="">Contribute</a>
+          <a href="">Create Account</a>
+          <a href="">Log In</a>
+        </div>
+        <div id="left-line">
+          <div id="navbar">
+            <div id="navbar-left">
+              <div>Article</div>
+              <div>Talk</div>
+            </div>
+            <div id="navbar-right">
+              <div>Read</div>
+              <div>View Source</div>
+              <div>View History</div>
+              <input id="navbar-input" placeholder="Search Wikipedia" />
+            </div>
+          </div>
+
+          <div id="details">
+            <div id="title">
+              <div id="earth">Earth</div>
+              <div id="title-help">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Cscr-featured.svg/40px-Cscr-featured.svg.png"
+                />
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Semi-protection-shackle.svg/40px-Semi-protection-shackle.svg.png"
+                />
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Sound-icon.svg/40px-Sound-icon.svg.png"
+                />
+              </div>
+            </div>
+            <div id="wiki">From Wikipedia, the free encyclopedia</div>
+            <p id="tag-line">
+              This article is about the planet. For its human aspects, see
+              <a class="link" href="">World</a>. For other uses, see
+              <a class="link" href="">Earth (disambiguation)</a> and Planet
+              Earth (disambiguation).
+            </p>
+            <div id="earth-details">
+              <div id="earth-details-left">
+                <p>
+                  <b>Earth</b> is the third <a class="link" href="">planet</a> from the
+                  <a class="link" href="">Sun</a> and the only
+                  <a class="link" href="">astronomical object</a>
+                  known to harbour and support <a class="link" href="">life.</a> 29.2% of Earth's surface is
+                  land consisting of continents and islands. The remaining 70.8%
+                  is <a class="link" href="">covered with water,</a> mostly by oceans, seas, <a class="link" href="">gulfs,</a> and
+                  other salt-water bodies, but also by lakes, rivers, and other
+                  freshwater, which together constitute the <a class="link" href="">hydrosphere.</a> Much of
+                    <a class="link" href="">Earth's polar regions</a> are covered in ice. Earth's outer layer
+                  is divided into several rigid
+                  <a class="link" href="">tectonic plates</a>
+                  <a class="link" href="">
+                    <sup>[list]</sup>
+                  </a>
+                  that migrate across the surface over many millions of years,
+                  while its interior remains active with a solid iron <a class="link" href="">inner
+                  core,</a> a liquid <a class="link" href="">outer core</a> that generates <a class="link" href="">Earth's magnetic
+                  field,</a> and a convective <a class="link" href="">mantle</a> that drives plate tectonics.
+                </p>
+                <p>
+                  <a class="link" href="">Earth's atmosphere</a> consists mostly of <a class="link" href="">nitrogen</a> and <a class="link" href="">oxygen.</a>
+                  More solar energy is received by tropical regions than polar
+                  regions and is redistributed by <a class="link" href="">atmospheric</a> and <a class="link" href="">ocean
+                  circulation.</a> <a class="link" href="">Greenhouse gases</a> also play an important role in
+                  regulating the surface temperature. A region's climate is not
+                  only determined by latitude, but also by elevation and
+                  proximity to moderating oceans, among other factors. Severe
+                  weather, such as tropical cyclones, thunderstorms, and
+                  heatwaves, occurs in most areas and greatly impacts life.
+                </p>
+                <p>
+                  <a class="link" href="">Earth's gravity</a> interacts with other objects in space,
+                  especially the <a class="link" href="">Moon, which is Earth's only <a class="link" href="">natural satellite.</a>
+                  Earth <a class="link" href="">orbits around the Sun</a> in about 365.25 days.<a class="link" href="">Earth's axis
+                  of rotation</a> is tilted with respect to its orbital plane,
+                  producing seasons on Earth. The <a class="link" href="">gravitational</a> interaction
+                  between Earth and the Moon causes tides, stabilizes Earth's
+                  orientation on its axis, and <a class="link" href="">gradually slows its rotation.</a>
+                  Earth is the densest planet in the <a class="link" href="">Solar System</a> and the
+                  largest and most massive of the four <a class="link" href="">rocky planets.</a>
+                </p>
+                <p>
+                  According to <a class="link" href="">radiometric dating</a> estimation and other evidence,
+                  Earth formed over <a class="link" href="">4.5 billion years ago.</a> Within the first
+                  billion years of <a class="link" href="">Earth's history,</a><a class="link" href=""> life appeared in the oceans</a>
+                  and began to affect Earth's atmosphere and surface, leading to
+                  the proliferation of <a class="link" href="">anaerobic</a> and,<a class="link" href=""> later,</a> <a class="link" href="">aerobic organisms.</a>
+                  Some geological evidence indicates that life may have arisen
+                  as early as 4.1 billion years ago. Since then, the combination
+                  of Earth's distance from the Sun, physical properties, and
+                  <a class="link" href="">geological history</a> have allowed life to evolve and thrive. In
+                  the <a class="link" href="">history of life on Earth,</a><a class="link" href="">biodiversity</a> has gone through
+                  long periods of expansion, occasionally punctuated by <a class="link" href="">mass
+                  extinctions.</a> More than 99% of all species that ever lived on
+                  Earth are extinct. Almost 8 billion humans live on Earth and
+                  depend on its <a class="link" href="">biosphere</a> and natural resources for their
+                  survival. Humans <a class="link" href="">increasingly impact</a> Earth's surface,
+                  hydrology, atmospheric processes, and other life.
+                </p>
+                <div id="etymology">
+                  <div id="e-title">Etymology</div>
+                  <div id="e-details">
+                    <p>
+                      The <a class="link" href="">modern English</a> word Earth developed, via <a class="link" href="">Middle
+                      English,</a> from an <a class="link" href="">Old English</a> noun most often spelled
+                        <a class="link" href="">eorðe.</a><a class="link" href=""><sup>[26]</sup></a> It has cognates in every <a class="link" href="">Germanic language,</a> and
+                      their <a class="link" href="">ancestral root</a> has been reconstructed as <a class="link" href="">*erþō.</a> In
+                      its earliest attestation, the word eorðe was already being
+                      used to translate the many senses of <a class="link" href="">Latin</a> <a class="link" href="">terra</a> and <a class="link" href="">Greek</a>
+                        <a class="link" href="">γῆ</a> gē: the ground, its soil, dry land, the human world,
+                      the surface of the world (including the sea), and the
+                      globe itself. As with Roman <a class="link" href="">Terra</a>/Tellūs and Greek Gaia,
+                      Earth may have been a <a class="link" href="">personified goddess</a> in Germanic
+                      paganism: late <a class="link" href="">Norse mythology</a> included <a class="link" href="">Jörð</a> ('Earth'), a
+                      giantess often given as the mother of <a class="link" href="">Thor.</a><a class="link" href=""><sup>[27]</sup></a>
+                    </p>
+                    <p>
+                      Historically, earth has been written in lowercase. From
+                      <a class="link" href="">early Middle English,</a> its <a class="link" href="">definite sense</a> as "the globe"
+                      was expressed as the earth. By <a class="link" href="">Early Modern English,</a> many
+                      nouns were capitalized, and the earth was also written the
+                      Earth, particularly when referenced along with other
+                      heavenly bodies. More recently, the name is sometimes
+                      simply given as Earth, by analogy with the names of the
+                      <a class="link" href="">other planets,</a> though earth and forms with the remain
+                      common.<a class="link" href=""><sup>[26]</sup></a> <a class="link" href="">House styles</a> now vary: <a class="link" href="">Oxford spelling</a>
+                      recognizes the lowercase form as the most common, with the
+                      capitalized form an acceptable variant. Another convention
+                      capitalizes "Earth" when appearing as a name (for example,
+                      "Earth's atmosphere") but writes it in lowercase when
+                      preceded by the (for example, "the atmosphere of the
+                      earth"). It almost always appears in lowercase in
+                      colloquial expressions such as "what on earth are you
+                      doing?"<a class="link" href=""><sup>[28]</sup></a>
+                    </p>
+                    <p>
+                      Occasionally, the name Terra <a class="link" href="">/ˈtɛrə/</a> is used in scientific writing and especially in science fiction to distinguish humanity's inhabited planet from others,<a class="link" href=""><sup>[29]</sup></a> while in poetry Tellus <a class="link" href="">/ˈtɛləs/</a> has been used to denote personification of the Earth.<a class="link" href=""><sup>[30]</sup></a> Terra is also the name of the planet in some <a class="link" href="">Romance languages</a> (languages that evolved from <a class="link" href="">Latin</a>) like <a class="link" href="">Italian</a> and <a class="link" href="">Portuguese,</a> while in other Romance languages the word gave rise to names with slightly altered spellings (like the <a class="link" href="">Spanish</a> Tierra and the <a class="link" href="">French</a> Terre). The Latinate form Gæa or Gaea (English: <a class="link" href="">/ˈdʒiːə/</a>) of the Greek poetic name <a class="link" href="">Gaia</a> (Γαῖα; <a class="link" href="">Ancient Greek: </a><a class="link" href="">[ɡâi̯.a]</a> or <a class="link" href="">[ɡâj.ja]</a></a>) is rare, though the alternative spelling Gaia has become common due to the <a class="link" href="">Gaia hypothesis,</a> in which case its pronunciation is <a class="link" href="">/ˈɡaɪə/</a> rather than the more classical English /ˈɡeɪə/.<a class="link" href=""><sup>[31]</sup></a>
+                    </p>
+                    <p>
+                      There are a number of adjectives for the planet Earth. From Earth itself comes earthly. From the Latin Terra comes terran <a class="link" href="">/ˈtɛrən/,</a>
+                        <a class="link" href=""><sup>[32]</sup></a> terrestrial
+                        <a class="link" href="">/təˈrɛstriəl/,</a><a class="link" href=""><sup>[33]</sup></a> and (via French) terrene <a class="link" href="">/təˈriːn/,</a><a class="link" href=""><sup>[34]</sup></a> and from the Latin Tellus comes tellurian <a class="link" href="">/tɛˈlʊəriən/</a><a class="link" href=""><sup>[35]</sup></a> and telluric.<a class="link" href=""><sup>[36]</sup></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div id="earth-details-right">
+                <div id="earth-header">
+                  <p>Earth</p>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Earth_symbol_%28fixed_width%29.svg/48px-Earth_symbol_%28fixed_width%29.svg.png"
+                  />
+                </div>
+                <div id="earth-content">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/440px-The_Earth_seen_from_Apollo_17.jpg"
+                  />
+                  <p>
+                    <a class="link" href="">The Blue Marble</a>, the most widely used photograph of
+                    Earth,<a class="link" href=""><sup>[1][2]</sup></a>
+                    taken by the <a class="link">Apollo 17</a> mission in 1972
+                  </p>
+                  <p>Designations</p>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><a class="link" href="">Alternative names</a></td>
+                        <td><a class="link" href="">Gaia,</a><a class="link" href=""> Terra,</a><a class="link" href=""> Tellus,</a> the<a class="link" href=""> world,</a> the <a class="link" href="">globe</a></td>
+                          
+                      </tr>
+                      <tr>
+                        <td><a class="link" href="">Adjectives</a></td>
+                        <td>Earthly, terrestrial, terran, tellurian</td>
+                      </tr>
+                      <tr>
+                        <td><a class="link" href="">Aphelion</a></td>
+                        <td>152100000 km (94500000 mi)<a class="link" href=""><sup>[n 2]</a></sup></td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a class="link" href="">Semi-major axis</a></td>
+                        <td>149598023 km (92955902 mi)<a class="link" href=""><sup>[3]</sup></a></td>
+                      </tr>
+                      <tr>
+                        <td><a class="link" href="">Eccentricitys</a></td>
+                        <td>	0.0167086<a class="link" href=""><sup>[3]</sup></a></td>
+                      </tr>
+                      <tr>
+                        <td><a class="link" href="">Orbital period</a></td>
+                        <td>365.256363004 d<a class="link" href=""><sup>[4]</sup></a>
+                          (31558.1497635 ks)</td>
+                      </tr>
+                      <tr>
+                        <td>Average <a class="link" href="">orbital speed</a></td>
+                        <td>29.78 km/s<a class="link" href=""><sup>[5]</sup></a>
+                          (107200 km/h; 66600 mph)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a class="link" href="">Mean anomaly</a></td>
+                        <td>358.617°</td>
+                      </tr>
+                      <tr>
+                        <td><a class="link" href="">Inclination</a></td>
+                        <td>	
+                          7.155° to the <a class="link" href="">Sun's</a> equator;
+                          1.57869°<a class="link" href=""><sup>[6]</sup></a> to <a class="link" href="">invariable plane</a>;
+                          0.00005° to J2000 <a class="link" href="">ecliptic</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a class="link" href="">Longitude of ascending node</a></td>
+                        <td>−11.26064°<a class="link" href=""><sup>[5]</sup></a> to J2000 ecliptic</td>
+                      </tr>
+                      <tr>
+                        <td><a class="link" href="">Time of perihelione</a></td>
+                        <td>2022-Jan-04<a class="link" href=""><sup>[7]</sup></a></td>
+                      </tr>
+                      <tr>
+                        <td><a class="link" href="">Argument of perihelion</a></td>
+                        <td>114.20783°<a class="link" href=""><sup>[5]c</sup></a></td>
+                      </tr>
+                      <tr>
+                        <td><a class="link" href="">Satellites</a></td>
+                        <td>1 natural satellite: the <a class="link" href="">Moon</a>
+                          5 <a class="link" href="">quasi-satellites</a>
+                          >3 300 operational <a class="link" href="">artificial satellites<sup>[8]</sup></a>
+                          >18 000 tracked <a class="link" href="">space debris</a><a class="link" href=""><sup>[n 3]</sup></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
